@@ -10,21 +10,24 @@ module.exports = {
   title: 'Corn Park',
   lang: 'zh-CN',
   description: '玉之米的自留地',
+  head: [['link', { rel: 'icon', href: '/images/av.png' }]],
 
   theme: defaultTheme({
+    logo: '/images/av.png',
+    repo: 'geniuscorn/cornpark-vuepress',
     navbar: [
-      { text: '主页', link: '/' },
+      { text: '主页🏠', link: '/' },
       {
-        text: '前端基础',
+        text: '前端基础💻',
         children: [
           { text: 'JavaScript', link: '/frontend/js' },
           { text: 'CSS', link: '/frontend/css' },
           { text: 'Vue', link: '/frontend/vue' },
         ],
       },
-      { text: '前端部署', link: '/frontend/deploy' },
-      { text: '读书笔记', link: '/reading' },
-      { text: '课程设计', link: '/school' },
+      { text: '前端部署⚙️', link: '/frontend/deploy' },
+      { text: '读书笔记🔖', link: '/reading' },
+      { text: '课程设计🎒', link: '/school' },
     ],
     sidebar: {
       '/frontend/js': js,
@@ -33,5 +36,8 @@ module.exports = {
       '/reading': reading,
       '/school': school,
     },
+    lastUpdated: false,
+    contributors: false,
+    editLink: false,
   }),
 };
