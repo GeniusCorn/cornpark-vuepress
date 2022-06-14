@@ -57,19 +57,21 @@ zone "huang.foo" {
 }
 ```
 
-创建指定的配置文件 `db.huang.foo`。这里我指定 A 记录 `www` 为 `192.168.43.128`。具体的域名解析配置，请自行查询，此处不再扩展。
+创建指定的配置文件 `db.huang.foo`。这里我指定 A 记录 `www` 为 `192.168.43.2`。具体的域名解析配置，请自行查询，此处不再扩展。
 
 ```conf
 $TTL    86400
-@       IN      SOA     localhost. root.localhost. (
+@       IN      SOA     huang.foo. root.huang.foo (
                               1         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
                           86400 )       ; Negative Cache TTL
 ;
-@       IN      NS      localhost.
-www     IN      A       192.168.43.128
+@       IN      NS      dns.huang.foo
+
+dns     IN      a       192.168.43.2
+www     IN      A       192.168.43.2
 ```
 
 ### 验证配置
@@ -94,4 +96,4 @@ dig www.huang.foo @127.0.0.1
 
 ![](/images/20220608201224.png)
 
-可以看到，DNS 服务已经生效。查询到域名 `www.huang.foo` 对应的 IP 为 `192.168.43.128`。
+可以看到，DNS 服务已经生效。查询到域名 `www.huang.foo` 对应的 IP 为 `192.168.43.2`。
