@@ -105,6 +105,6 @@ sudo systemctl restart isc-dhcp-server.service
 sudo systemctl status isc-dhcp-server.service
 ```
 
-![](/images/20220607145322.png)
+![/images/20220607145322.png](/images/20220607145322.png)
 
 如果显示 `active` 则表示服务正常运行。
