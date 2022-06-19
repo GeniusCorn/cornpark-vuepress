@@ -10,6 +10,7 @@ module.exports = [
       { text: '选择器的优先级', link: '/frontend/css/选择器的优先级.md' },
       { text: '组合选择符', link: '/frontend/css/组合选择符.md' },
       { text: '测试', link: '' },
+      { text: '测试2' },
     ],
   },
 ];
