@@ -1,6 +1,7 @@
 const js = require('./js.sidebar');
 const css = require('./css.sidebar');
 const vue = require('./vue.sidebar');
+const deploy = require('./deploy.sidebar');
 const school = require('./school.sidebar');
 const reading = require('./reading.sidebar');
 
@@ -33,6 +34,7 @@ module.exports = {
       '/frontend/js': js,
       '/frontend/css': css,
       '/frontend/vue': vue,
+      '/frontend/deploy': deploy,
       '/reading': reading,
       '/school': school,
     },
