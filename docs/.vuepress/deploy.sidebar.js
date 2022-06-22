@@ -10,6 +10,10 @@ module.exports = [
         text: '2. 基于 Docker 部署极简服务',
         link: '/frontend/deploy/基于 Docker 部署极简服务.md',
       },
+      {
+        text: '3. 使用 nginx 镜像构建容器',
+        link: '/frontend/deploy/使用 nginx 镜像构建容器.md',
+      },
     ],
   },
 ];
