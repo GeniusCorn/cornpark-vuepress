@@ -15,8 +15,12 @@ module.exports = [
         link: '/frontend/deploy/使用 nginx 镜像构建容器.md',
       },
       {
-        text: '4. 使用 nginx 镜像构建容器',
+        text: '4. Docker 缓存优化技术及多阶段构建',
         link: '/frontend/deploy/Docker 缓存优化技术及多阶段构建.md',
+      },
+      {
+        text: '5. 单页应用的路由与持久缓存优化',
+        link: '/frontend/deploy/单页应用的路由与持久缓存优化.md',
       },
     ],
   },
