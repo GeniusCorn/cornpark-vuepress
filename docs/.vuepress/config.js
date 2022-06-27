@@ -1,7 +1,6 @@
-const js = require('./js.sidebar');
-const css = require('./css.sidebar');
-const vue = require('./vue.sidebar');
+const interviews = require('./interviews.sidebar');
 const deploy = require('./deploy.sidebar');
+const leetcode = require('./leetcode.sidebar');
 const school = require('./school.sidebar');
 const reading = require('./reading.sidebar');
 
@@ -19,22 +18,18 @@ module.exports = {
     navbar: [
       { text: '主页🏠', link: '/' },
       {
-        text: '前端基础💻',
-        children: [
-          { text: 'JavaScript', link: '/frontend/js' },
-          { text: 'CSS', link: '/frontend/css' },
-          { text: 'Vue', link: '/frontend/vue' },
-        ],
+        text: '前端面试💻',
+        link: '/interviews',
       },
-      { text: '前端部署⚙️', link: '/frontend/deploy' },
+      { text: '前端部署⚙️', link: '/deploy' },
+      { text: 'LeetCode🖊️', link: '/leetcode' },
       { text: '读书笔记🔖', link: '/reading' },
       { text: '课程设计🎒', link: '/school' },
     ],
     sidebar: {
-      '/frontend/js': js,
-      '/frontend/css': css,
-      '/frontend/vue': vue,
-      '/frontend/deploy': deploy,
+      '/interviews': interviews,
+      '/deploy': deploy,
+      '/leetcode': leetcode,
       '/reading': reading,
       '/school': school,
     },
