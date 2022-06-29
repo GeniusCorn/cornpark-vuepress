@@ -22,6 +22,10 @@ module.exports = [
         text: '5. 单页应用的路由与持久缓存优化',
         link: '/deploy/单页应用的路由与持久缓存优化.md',
       },
+      {
+        text: '6. 服务网关 Traefik 搭建',
+        link: '/deploy/服务网关 Traefik 搭建.md',
+      },
     ],
   },
 ];

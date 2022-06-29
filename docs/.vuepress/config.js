@@ -24,7 +24,7 @@ module.exports = {
       { text: '前端部署⚙️', link: '/deploy' },
       { text: 'LeetCode🖊️', link: '/leetcode' },
       { text: '读书笔记🔖', link: '/reading' },
-      { text: '课程设计🎒', link: '/school' },
+      // { text: '课程设计🎒', link: '/school' },
     ],
     sidebar: {
       '/interviews': interviews,
