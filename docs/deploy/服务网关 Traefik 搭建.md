@@ -205,7 +205,7 @@ Traefik 同样支持 HTTPS/TLS。借助 `ACME` 的帮助下配置也十分简单
 
 ```yml
 labels:
-  # 设置Host 为 whoami.docker.com 进行域名访问
+  # 设置 Host 为 whoami.nicecorn.com 进行域名访问
   - traefik.http.routers.whoami.rule=Host(`whoami.nicecorn.com`)
   - traefik.http.routers.whoami.tls=true
   - traefik.http.routers.whoami.tls.certresolver=myresolver
