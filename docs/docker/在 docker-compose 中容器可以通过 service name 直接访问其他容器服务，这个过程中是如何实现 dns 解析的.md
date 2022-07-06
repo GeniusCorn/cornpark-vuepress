@@ -29,11 +29,11 @@ networks:
 
 启动服务，使用 `docker network ls` 命令，查看该网络名称为 `test_test`。使用 `docker network inspect` 命令查看网络详细配置，发现 `Containers` 下已经将各个容器设置好了名称、IP 地址等。
 
-![](images/2022-07-02_12-36-54.png)
+![](/images/2022-07-02_12-36-54.png)
 
 进入 `alpine` 容器，测试对另一容器的连通性。使用 `ping test-db-1` 命令测试，结果连通正常且 IP 地址解析为 `172.22.0.2`，与 `inspect` 中的内容一致。
 
-![](images/2022-07-02_12-40-36.png)
+![](/images/2022-07-02_12-40-36.png)
 
 猜测一：docker 在容器中本地解析 DNS
 
