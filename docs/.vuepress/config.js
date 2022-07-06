@@ -2,6 +2,7 @@ const interviews = require('./interviews.sidebar');
 const deploy = require('./deploy.sidebar');
 const leetcode = require('./leetcode.sidebar');
 const school = require('./school.sidebar');
+const docker = require('./docker.sidebar');
 const reading = require('./reading.sidebar');
 
 const { defaultTheme } = require('vuepress');
@@ -23,6 +24,7 @@ module.exports = {
       },
       { text: '前端部署⚙️', link: '/deploy' },
       { text: 'LeetCode🖊️', link: '/leetcode' },
+      { text: 'Docker🐬', link: '/docker' },
       { text: '读书笔记🔖', link: '/reading' },
       // { text: '课程设计🎒', link: '/school' },
     ],
@@ -30,6 +32,7 @@ module.exports = {
       '/interviews': interviews,
       '/deploy': deploy,
       '/leetcode': leetcode,
+      '/docker': docker,
       '/reading': reading,
       '/school': school,
     },

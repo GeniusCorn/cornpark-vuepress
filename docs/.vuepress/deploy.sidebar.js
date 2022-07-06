@@ -1,6 +1,7 @@
 module.exports = [
   {
     text: '前端部署',
+    link: '/deploy/index.md',
     children: [
       {
         text: '1. 手写静态资源服务器',
